@@ -1,0 +1,139 @@
+/* Importing Custom Fonts */
+@font-face {
+  font-family: 'FinSerifDisplay-Italic';
+  src: url('Fonts/FinSerifDisplay-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Baskerville Old Face';
+  src: url('Fonts/BASKVILL.TTF') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* General Styles */
+body {
+  font-family: 'Baskerville Old Face', serif;
+  background-color: #392e2a;
+  color: #4e3a31;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #cccdbf;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: 'Baskerville Old Face', serif;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 40px 0;
+}
+
+/* Education Card Style */
+.education-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Education Header */
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.edu-header h2 {
+  font-family: 'Baskerville Old Face', serif;
+  font-size: 24px;
+  color: #3A2E2A; /* Brown color */
+}
+
+.edu-header span {
+  font-size: 14px;
+  color: #888;
+  font-family: 'FinSerifDisplay-Italic', serif;
+}
+
+.duration {
+  font-family: 'FinSerifDisplay-Italic', serif;
+  font-size: 14px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* List */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #4e3a31;
+  font-family: 'Baskerville Old Face', serif;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Baskerville Old Face', serif;
+}
+
+th {
+  background-color: #7e7a77; /* Light yellow accent */
+  color: #ffffff
+  ;
+}
+
+/* Caption */
+caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #4e3a31;
+  font-family: 'Baskerville Old Face', serif;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+
+  .education-card {
+    padding: 20px;
+  }
+
+  .edu-header h2 {
+    font-size: 20px;
+  }
+}

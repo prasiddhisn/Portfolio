@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3a2e2a;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #cccdbf;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 40px 0;
+  }
+  
+  /* Experience Card Styles */
+  .experience-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Experience Header */
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .exp-header h2 {
+    font-size: 24px;
+    color: #3A2E2A; /* Brown color */
+  }
+  
+  .exp-header span {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .duration {
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* List */
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Certificate Link */
+  .certificate-link {
+    margin-top: 20px;
+  }
+  
+  .certificate-link a {
+    font-size: 16px;
+    color: #82745c; /* Yellow accent */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .certificate-link a:hover {
+    color: #d49a4b; /* Darker yellow on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    main {
+      padding: 10px;
+    }
+  
+    .experience-card {
+      padding: 20px;
+    }
+  
+    .exp-header h2 {
+      font-size: 20px;
+    }
+  }
+  
+  /* Importing Custom Fonts */
+  @font-face {
+    font-family: 'FinSerifDisplay-Italic';
+    src: url('Fonts/FinSerifDisplay-Italic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: 'Baskerville Old Face';
+    src: url('Fonts/BASKVILL.TTF') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  

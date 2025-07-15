@@ -1,0 +1,527 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+main {
+    height: 100vh; /* ensure the main page content takes up at least the full viewport height */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-right: 60px; /* Adjust to move the image further right */
+    margin-top: -80px
+}
+
+/* Body Styles */
+body {
+    background-color: #3a2e2a; /* Deep brown for dark mode */
+    color: #E0D9C4; /* Off-white for better contrast */
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+    background-color: #E0D9C4;
+    color: #E0D9C4;
+}
+
+body.light header {
+    background-color: #5f5c59d3; /* White background */
+}
+
+body.light footer {
+    background-color: #E0D9C4; /* White background */
+    transition: background-color 0.3s, color 0.3s
+}
+
+body.dark {
+    background-color: #3a2e2a;
+    color: #E0D9C4;
+}
+
+body.dark header {
+    background-color: #5f5c59d3; /* Darker warm tan */
+}
+
+body.dark footer {
+    background-color: #3a2e2a; /* Darker warm tan */
+    transition: background-color 0.3s, color 0.3s
+}
+    
+
+
+/* Header Styles */
+
+/* Light Mode Styles */
+body.light header {
+    background-color: #5f5c59d3; /* Lighter background for light mode */
+}
+
+body.light .nav-item {
+    color: #E0D9C4; /* Dark text for light mode */
+    transition: color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+body.light .nav-item:hover {
+    color: #f7e08c; /* Yellow accent on hover in light mode */
+}
+
+body.light .number {
+    color: #f7e08c; /* Yellow number for light mode */
+    transition: color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+body.light #mode-toggle {
+    color: #f7e08c; /* Dark icon for light mode */
+    transition: color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+body.light #mode-toggle:hover {
+    color: #f7e08c; /* Yellow accent on hover in light mode */
+}
+
+/* Dark Mode Styles */
+body.dark header {
+    background-color: #5f5c59d3; /* Dark warm tan */
+}
+
+body.dark .nav-item {
+    color: #E0D9C4; /* Off-white text for dark mode */
+    transition: color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+body.dark .nav-item:hover {
+    color: #F7E08C; /* Yellow accent on hover in dark mode */
+}
+
+body.dark .number {
+    color: #f7e08c; /* Yellow number for dark mode */
+    transition: color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+body.dark #mode-toggle {
+    color: #f7e08c; /* Off-white icon for dark mode */
+    transition: color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+body.dark #mode-toggle:hover {
+    color: #F7E08C; /* Yellow accent on hover in dark mode */
+}
+
+/* Shared Header Styles */
+header {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18.5px;
+    padding: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10; /* Ensure no gap between number and text */
+}
+
+.number {
+    margin-right: 7px;
+}
+
+#mode-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#toggle-icon {
+    height: 30px; /* Adjust the size of the icon */
+    transition: transform 0.3s ease; /* Optional: Smooth transition */
+}
+
+/* Main Section */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    padding: 40px;
+}
+
+
+/* Hero Section */
+.hero {
+    max-width: 600px;
+     /* Center text horizontally */
+    flex: 1; /* Allow text to take up available space */
+}
+
+/* Hero Text */
+.hero h1 {
+    font-family:'Baskerville Old Face', serif;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    color: #3A2E2A; /* Brown color */
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease;
+}
+
+.hero h2 {
+    font-family:'Lucida Bright', serif;
+    font-size: 2rem;
+    margin-left: 25px;
+    
+    color: #3A2E2A; /* Beige accent */
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Light Mode Styles (Default) */
+body.light .hero h1 {
+    color: #3a2e2a; /* Brown color for light mode */
+}
+
+body.light .hero h2 {
+    color: #3A2E2A; /* Beige accent for light mode */
+}
+
+/* Dark Mode Styles */
+body.dark .hero h1 {
+    color: #E0D9C4; /* Light color for dark mode */
+}
+
+body.dark .hero h2 {
+    color: #E0D9C4; /* Light color for dark mode */
+}
+
+
+/* Social Links Container (Global Position) */
+.social-links {
+    position: fixed; /* Fixed positioning relative to the viewport */
+    top: 53%; /* Center vertically, adjust as needed */
+    right: 100px; /* Distance from the right edge */
+    transform: translateY(-50%); /* Center vertically */
+    display: flex;
+    flex-direction: column;
+    gap: 63px;
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+
+/* Footer Animation */
+footer {
+    background-color: #E0D9C4;
+    padding: 42px;
+    text-align:end;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+/* Profile Image */
+.profile-pic {
+    margin-top: 60px;
+    margin-left: 120px; /* Adjust image position */
+    border-radius: 15px;
+}
+
+/* Font Options */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('Fonts/CustomFont.woff2') format('woff2');
+}
+
+/* Add a class for alternate fonts */
+.font-alt {
+    font-family: 'CustomFont', sans-serif;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: 'FinSerifDisplay-Italic';
+    src: url('Fonts\FinSerifDisplay-Italic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Baskerville Old Face';
+    src: url('Fonts\ BASKVILL.TTF') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Lucida Bright', serif;
+    src: url('Fonts\ LBRITE.TTF') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Consolas';
+    src: url('Fonts/consola.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+  
+  /* Add this to your CSS */
+
+  .about-me-container {
+
+    position: absolute;
+  
+    top: 100vh;
+  
+    left: 0;
+  
+    width: 100%;
+  
+    height: 180vh;
+  
+    background-color: #3a2e2a; /* different background color */
+  
+    display: flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    transform: translateY(0);
+  
+    z-index: 2; /* ensure the about-me container is on top of the main page */
+   
+    opacity: 9;
+  
+  }
+  
+  
+  
+  .about-me-content {
+  
+    max-width: 800px;
+  
+    padding: 40px;
+
+    color: #4e3a31; /* Match the text color of the body */
+  }
+  
+  .about-me-card,
+  .skills-card,
+  .hobbies-card,
+  .languages-card {
+    background-color: #e0d9c4; /* Card background color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-me-card:hover,
+  .skills-card:hover,
+  .hobbies-card:hover,
+  .languages-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2, h3 {
+    font-family: 'Baskerville Old Face', serif;
+    color: #e0d9c4;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Arrow container styling (leave untouched) */
+  .arrow-container {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* ensure the arrow is on top */
+  }
+  
+  
+  .arrow-container {
+
+    position: fixed;
+  
+    bottom: 0;
+  
+    left: 50%;
+  
+    transform: translateX(-50%);
+  
+    z-index: 2; /* ensure the arrow is on top of the about-me container */
+  
+  }
+  
+  
+  .arrow {
+  
+    width: 20px; /* adjust the width and height to match your icon size */
+  
+    height: 20px;
+  
+    cursor: pointer;
+  
+    transition: transform 0.3s ease;
+  
+  }
+  
+  
+  .arrow::before {
+  
+    content: "";
+  
+    position: absolute;
+  
+    top: 50%;
+  
+    left: 50%;
+  
+    transform: translate(-50%, -50%);
+  
+    width: 20px;
+  
+    height: 20px;
+  
+    background-color: #fff;
+  
+    border-radius: 50%;
+  
+    transition: transform 0.3s ease;
+  
+  }
+
+  /* Style the about-me content */
+
+.about-me-content {
+
+    max-width: 800px;
+  
+    padding: 40px;
+  
+    background-color: #595451; /* Match the background color of the container */
+  
+    color: #4e3a31; /* Match the text color of the body */
+  
+    border-radius: 10px;
+  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  
+  }
+  
+  
+  
+  .about-me-content h2 {
+  
+    font-family: 'Baskerville Old Face', serif; /* Use the same font as the main heading */
+  
+    font-size: 2.5rem;
+  
+    margin-bottom: 20px;
+  
+  }
+  
+  
+  .about-me-content p {
+  
+    line-height: 1.6; /* Improve readability with line spacing */
+  
+    margin-bottom: 20px;
+  
+  }
+  
+  
+  /* Style the arrow */
+  
+  .arrow::before {
+  
+    content: "";
+  
+    position: absolute;
+  
+    top: 50%;
+  
+    left: 50%;
+  
+    transform: translate(-50%, -50%);
+  
+    width: 20px;
+  
+    height: 20px;
+  
+    background-color: #fff;
+  
+    border-radius: 50%;
+  
+    transition: transform 0.3s ease;
+  
+  }
+  
+  
+  .arrow:hover::before {
+  
+    transform: translate(-50%, -50%) rotate(45deg); /* Rotate the arrow on hover */
+  
+  }

@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: 'Baskerville Old Face', serif;
+    background-color: #3a2e2a;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #cccdbf;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Project Introduction */
+.project-intro {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 0.5s ease;
+}
+
+.project-intro h2 {
+    font-size: 24px;
+    font-family: 'FinSerifDisplay-Italic', serif;
+    color: #3A2E2A; /* Brown color */
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+}
+
+/* Project Card */
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Header */
+.project-header h3 {
+    font-size: 20px;
+    color: #3A2E2A;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+}
+
+/* Project Details */
+.project-details h4 {
+    font-size: 18px;
+    color: #3A2E2A;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.project-details p, ul {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* GitHub Link */
+.project-link h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.project-link a {
+    font-size: 16px;
+    color: #82745c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link a:hover {
+    color: #d49a4b;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    .project-intro h2, .project-header h3 {
+        font-size: 20px;
+    }
+}
