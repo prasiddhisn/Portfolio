@@ -6,8 +6,6 @@ You can see the live portfolio website here: https://prasiddhisn.github.io/Portf
 
 ---
 
----
-
 🚀 Features
 
 \- Responsive multi-page layout
